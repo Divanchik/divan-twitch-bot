@@ -1,0 +1,8 @@
+{
+    "nick": "divan_bot",
+    "channel": "theiathedraco",
+    "access_token": "someaccesstoken",
+    "client_id": "someidexample",
+    "client_secret": "somesecretexample",
+    "auth_code": "someauthcode"
+}
