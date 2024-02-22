@@ -12,6 +12,7 @@ async def handle_message(wsock, message):
         # keepalive message
         if msg['command']['command'] == 'PING':
             await wsock.send(f"PONG :{msg['parameters']}")
+        # custom commands
         if msg.get('tags') != None and msg['parameters'] == '!hello':
             print("hello command detected")
             await wsock.send(f"@reply-parent-msg-id={msg['tags']['id']} PRIVMSG {msg['command']['channel']} :И тебе не хворать")
